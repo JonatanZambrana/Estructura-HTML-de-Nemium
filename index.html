@@ -11,43 +11,52 @@
     <!--titulo de la pagina-->
     <!--<link rel="stylesheet" href="css/estilos.css">
     utilizar hoja de estilos-->
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <header></header>
-    <aside>
-        <details open>
-            <summary>Setup</summary>
-            <ol>
-                <li>Google Chrome</li>
-                <li>VS Code</li>
-                <li>Figma</li>
-                <li>GitHub</li>
-            </ol>
-        </details>
+    <header class="header"></header>
 
-        <details>
-            <summary>Conceptos esenciales del Desarrollo Web</summary>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-        </details>
-    </aside>
-    <!--visible para el usuario-->
-    <h1>Curso esencial de HTML y CSS</h1>
-        <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-        <hr>
+    <div class="envoltura">
+        <aside class="aside">
+            <nav class="aside-navbar">
+                <details class="flecha" open>
+                    <summary>Setup</summary>
+                        <ol>
+                             <li><a href="#chrome">Google Chrome</a></li>
+                              <li><a href="#vsCode">Visual Studio Code</a></li>
+                             <li><a href="#figma">Figma</a></li>
+                             <li><a href="#gitHub">GitHub</a></l>
+                        </ol>
+                    </details>
 
-    <section>
-        <h2>Setup</h2>
+                    <details class="flecha">
+                      <summary>Conceptos esenciales del Desarrollo Web</summary>
+                        <ol >
+                               <li><a href="#html">Qué es HTML</a></li>
+                               <li><a href="#etiquetas">Etiquetas</a></li>
+                             <li><a href="#dom">DOM</a></li>
+                               <li><a href="#semantic">Semántica</a></li>
+                              <li><a href="#atributos">Atributos</a></li>
+                              <li><a href="#css">Qué es CSS</a></li>
+                        </ol>
+                     </details>
+            </nav>
+        </aside>
+    
+        <main class="main-content">
+             <h1>Curso esencial de HTML y CSS</h1>
+            <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+            <hr>
 
-        <article id="chrome">
-         <img src="./Google-Chrome.png" alt="Google Chrome Icon" />
-         <h3>1. Google Chrome</h3>
-         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-        </article>
+            <section>
+                 <h2>Setup</h2>
+
+                     <article id="chrome">
+                       <img src="./Google-Chrome.png" alt="Google Chrome Icon" />
+                     <h3>1. Google Chrome</h3>
+                      <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
+                     </article>
 
         <article id="vsCode">
          <img src="./vs-code.png" alt="Visual Studio Code Icon" />
@@ -73,59 +82,61 @@
                 <br>
                 - Leonidas Esteban
         </blockquote>
-    </section>
-    <br>
-    <section>
-        <h2>Conceptos esenciales del Desarrollo Web</h2>
+         </section>
 
-        <h3>HTML</h3>
-        <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
-        <pre>
-            <code>
-                &lt;!DOCTYPE html &gt;
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt;
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                &lt;title &gt;&lt;Document&gt;&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                
-                &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-        </pre>
-        <article>
-         <h3>Etiquetas</h3>
-         <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
-         <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.</p>
-        </article>
+        <br>
 
-        <article>
-         <h3>DOM</h3>
-         <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
-         <img src="./dom.png" alt="Document Object Model Web">
-        </article>
+        <section>
+                    <h2>Conceptos esenciales del Desarrollo Web</h2>
 
-        <article>
-         <h3>Semántica</h3>
-         <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-        </article>
+                    <h3 id="html"> 1. Qué es HTML</h3>
+                    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
+                <pre class="prec">
+                    <code>
+                        &lt;!DOCTYPE html &gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport"content="width=device-width,initial-scale=1.0"&gt;
+                        &lt;title &gt;&lt;Document&gt;&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                 </pre>
+                    <article>
+                         <h3 id="etiquetas">Etiquetas</h3>
+                         <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
+                         <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.</p>
+                    </article>
 
-        <article>
-         <h3>Atributos</h3>
-         <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
-        </article>
+                    <article>
+                            <h3 id="dom">DOM</h3id>
+                            <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
+                            <img src="./dom.png" alt="Document Object Model Web">
+                    </article>
 
-        <article>
-         <h3>CSS</h3>
-         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
-         <img src="./CSS.png" alt="css image">
-        </article>
-    </section>
-    <br>
-    <br>
-    <section>
+                    <article>
+                        <h3 id="semantic">Semántica</h3>
+                        <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
+                    </article>
+
+                    <article>
+                        <h3 id="atributos">Atributos</h3>
+                        <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
+                    </article>
+
+                    <article>
+                        <h3 id="css">CSS</h3>
+                        <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
+                        <img src="./CSS.png" alt="css image">
+                    </article>
+            </section>
+        <br>
+        <br>
+         <section>
         <h3>Modelo de caja</h3>
         
         <h4>El modelo de caja está compuesto por:</h4>
@@ -159,26 +170,33 @@
             </ul>
         </p>
         <br>
-        <h4>Modelo de caja</h4>
-        <img src="./viejo-sabroso.png" alt="foto Leonidas">
-    </section>
+        <h2>Modelo de caja</h2>
+         <img src="./viejo-sabroso.png" alt="foto Leonidas">
+         </section>
 
-    <section>
-        <p>Si tienes alguna pregunta escríbeme a <a href="mailto:me@leonidasesteban.com" >me@leonidasesteban.com</a></p>
-    </section>
+          <section>
+            <p>Si tienes alguna pregunta escríbeme a <a href="mailto:me@leonidasesteban.com" >me@leonidasesteban.com</a></p>
+         </section>
 
-    <form>
-        <input type="text" placeholder="Nombres">
-        <br>
-        <br>
-        <input type="email" placeholder="Correo Electronico">
-        <br>
-        <br>
-        <input type="submit" value="Suscribirme">
-    </form>
+         <form id="form" class="form" action="#form" method="GET">
+            <h3 class="form__title">Suscríbete a nuestro newsletter</h3>
+            <input
+              class="form__input"
+              name="fullname"
+              type="text"
+              placeholder="Nombre"
+              required>
+            <input class="form__input" name="email" type="email"placeholder="Correo electrónico"required>
+            <input class="btn" type="submit" value="Suscribirme" >
+          </form>
+        </main>
+    </div>
 
-    <footer>
-        <p>© Leonidas Esteban 2021</p>
+
+
+
+    <footer class="footer">
+        <p class="titulofooter">© Leonidas Esteban 2021</p>
         <img src="./Instagram-chiquito.png" alt="Instagram-chiquito"> 
         <img src="./Facebook-chiquito.png" alt="Facebook-chiquito">
         <img src="./Twitter-chiquito.png" alt="Twitter-chiquito">
